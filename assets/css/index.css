@@ -1,0 +1,49 @@
+.layui-footer {
+  text-align: center;
+  font-size: 12px;
+  
+}
+.layui-nav-tree {
+  position: relative;
+}
+.layui-nav-tree>.layui-nav-item>a {
+  padding-left: 33px;
+}
+.layui-nav-tree .layui-icon,
+.icon-home {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 20px;
+  color: red;
+}
+.icon-tuichu {
+  margin-right: 5px;
+}
+.pl{
+  width:100%;
+  height: 100%;
+}
+a {
+  transition: none !important;
+}
+.text_avatar {
+  display: inline-block;
+  height: 30px;
+  vertical-align: middle;
+  width: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+  background-color: seagreen;
+}
+.layui-nav-img{
+  
+}
+.layui-side-scroll .userinfo {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 46px;
+  /* border-bottom: 4px sold sienna; */
+  border-bottom: 2px solid gray;
+}

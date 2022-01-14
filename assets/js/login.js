@@ -33,7 +33,7 @@ $(function () {
       username: $('#form_reg [name=username]').val(),
       password: $('#form_reg [name=password]').val()
     }
-    $.post('api/reguser',
+    $.post('/api/reguser',
       data,
       function (res) {
         if (res.status !== 0) {
@@ -46,6 +46,7 @@ $(function () {
   //登陆
   $('#form_login').on('submit', function (e) {
     e.preventDefault()
+    // alert(99)
     $.ajax({
       url: '/api/login',
       type: 'POST',
@@ -56,7 +57,7 @@ $(function () {
           return layer.msg('登录失败！')
         }
         layer.msg('成功')
-        // localStorage.setItem('token', res.token)
+        localStorage.setItem('token', res.token)
         location.href = '/index.html'
       }
     })
